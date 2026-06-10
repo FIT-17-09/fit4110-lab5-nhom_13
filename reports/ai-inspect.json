@@ -1,0 +1,300 @@
+[
+    {
+        "Id": "2a0c9b8e6ae9f5c77f796f6f22bc4e09922101b3ddaa49323aeb8389b71f5c53",
+        "Created": "2026-06-10T01:32:01.074734081Z",
+        "Path": "uvicorn",
+        "Args": [
+            "ai_service.main:app",
+            "--app-dir",
+            "src",
+            "--host",
+            "0.0.0.0",
+            "--port",
+            "9000"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 5616,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-06-10T01:32:01.500861769Z",
+            "FinishedAt": "0001-01-01T00:00:00Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-06-10T01:48:46.930094495Z",
+                        "End": "2026-06-10T01:48:47.157878363Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-06-10T01:49:17.156784503Z",
+                        "End": "2026-06-10T01:49:17.436950001Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-06-10T01:49:47.437099338Z",
+                        "End": "2026-06-10T01:49:47.742109651Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-06-10T01:50:17.7418509Z",
+                        "End": "2026-06-10T01:50:18.045273008Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    },
+                    {
+                        "Start": "2026-06-10T01:50:48.044730301Z",
+                        "End": "2026-06-10T01:50:48.270246149Z",
+                        "ExitCode": 0,
+                        "Output": ""
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:5fdf017a9bd02ed92ffda5212c05dd8c009df2a3a3006424a20ac695a2778b07",
+        "ResolvConfPath": "/var/lib/docker/containers/2a0c9b8e6ae9f5c77f796f6f22bc4e09922101b3ddaa49323aeb8389b71f5c53/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/2a0c9b8e6ae9f5c77f796f6f22bc4e09922101b3ddaa49323aeb8389b71f5c53/hostname",
+        "HostsPath": "/var/lib/docker/containers/2a0c9b8e6ae9f5c77f796f6f22bc4e09922101b3ddaa49323aeb8389b71f5c53/hosts",
+        "LogPath": "/var/lib/docker/containers/2a0c9b8e6ae9f5c77f796f6f22bc4e09922101b3ddaa49323aeb8389b71f5c53/2a0c9b8e6ae9f5c77f796f6f22bc4e09922101b3ddaa49323aeb8389b71f5c53-json.log",
+        "Name": "/fit4110-ai-lab05",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "fit4110-lab5-nhom_13_team-internal",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": ""
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "2a0c9b8e6ae9",
+            "Domainname": "",
+            "User": "appuser",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "8000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/venv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+                "PYTHON_VERSION=3.11.15",
+                "PYTHON_SHA256=272179ddd9a2e41a0fc8e42e33dfbdca0b3711aa5abf372d3f2d51543d09b625",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PYTHONUNBUFFERED=1",
+                "APP_HOST=0.0.0.0",
+                "APP_PORT=8000",
+                "AUTH_TOKEN=local-dev-token",
+                "SERVICE_NAME=iot-ingestion",
+                "SERVICE_VERSION=0.5.0"
+            ],
+            "Cmd": [
+                "uvicorn",
+                "ai_service.main:app",
+                "--app-dir",
+                "src",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "9000"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "python",
+                    "-c",
+                    "import urllib.request; urllib.request.urlopen('http://localhost:9000/health')"
+                ],
+                "Interval": 30000000000,
+                "Timeout": 5000000000,
+                "StartPeriod": 10000000000,
+                "Retries": 3
+            },
+            "Image": "fit4110-lab5-nhom_13-ai-service",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "6fadf69f68e0a6d6389d9583c572758c16eb348561b2cdb609d723833a6826a3",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:5fdf017a9bd02ed92ffda5212c05dd8c009df2a3a3006424a20ac695a2778b07",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "fit4110-lab5-nhom_13",
+                "com.docker.compose.project.config_files": "D:\\Kỳ_9\\DichVuKetNoi\u0026CongNghe\\fit4110-lab5-nhom_13\\docker-compose.yml",
+                "com.docker.compose.project.working_dir": "D:\\Kỳ_9\\DichVuKetNoi\u0026CongNghe\\fit4110-lab5-nhom_13",
+                "com.docker.compose.service": "ai-service",
+                "com.docker.compose.version": "2.40.3"
+            },
+            "StopTimeout": 1
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "8ec988600d0a791922f589675fa83ef512792b9fefa328d0f53b9bac5d2148cb",
+            "SandboxKey": "/var/run/docker/netns/8ec988600d0a",
+            "Ports": {
+                "8000/tcp": null
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "fit4110-lab5-nhom_13_team-internal": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "fit4110-ai-lab05",
+                        "ai-service"
+                    ],
+                    "MacAddress": "fe:c8:41:a1:4b:ed",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "967971f6d30d5c1b6ec4f7ceaaa004fa83382f08431c3a505788d89541982e5f",
+                    "EndpointID": "1787363a5696f4815fbcc96bb3a55b06bb2c48909fb1380ec5ca2b805daa1b76",
+                    "Gateway": "172.20.0.1",
+                    "IPAddress": "172.20.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "fit4110-ai-lab05",
+                        "ai-service",
+                        "2a0c9b8e6ae9"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:6a3a09427644cd99df93e042bf655f0dc72714e0751703d6fdba3479d91fb853",
+            "size": 2002,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

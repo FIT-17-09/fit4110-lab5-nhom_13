@@ -1,6 +1,7 @@
 import os
 from datetime import datetime, timezone
 from enum import Enum
+from http import HTTPStatus
 from typing import Dict, List, Optional
 
 from fastapi import Depends, FastAPI, Header, HTTPException, Query, Request, Response, status
@@ -107,19 +108,27 @@ def build_problem(
 
 
 @app.exception_handler(HTTPException)
-async def http_exception_handler(request: Request, exc: HTTPException) -> JSONResponse:
+async def http_exception_handler(
+    request: Request,
+    exc: HTTPException
+) -> JSONResponse:
+
+    # Nếu detail đã là Problem Details thì dùng luôn
     if isinstance(exc.detail, dict):
         problem = exc.detail
     else:
         problem = build_problem(
             status_code=exc.status_code,
-            title=status.HTTP_STATUS_CODES.get(exc.status_code, "HTTP Error"),
+            title=HTTPStatus(exc.status_code).phrase,
             detail=str(exc.detail),
             instance=str(request.url.path),
         )
 
     problem.setdefault("status", exc.status_code)
-    problem.setdefault("title", status.HTTP_STATUS_CODES.get(exc.status_code, "HTTP Error"))
+    problem.setdefault(
+        "title",
+        HTTPStatus(exc.status_code).phrase
+    )
     problem.setdefault("type", "about:blank")
     problem.setdefault("detail", "Request failed")
     problem.setdefault("instance", str(request.url.path))
@@ -130,7 +139,6 @@ async def http_exception_handler(request: Request, exc: HTTPException) -> JSONRe
         media_type="application/problem+json",
         headers=getattr(exc, "headers", None),
     )
-
 
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(
