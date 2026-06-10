@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="FIT4110 Lab05 Compose Health Checks" tests="2" time="3.056">
+  <testsuite name="API Health" id="6c900180-63fd-4110-82d9-f05cafd142b9" timestamp="2026-06-10T01:57:35.777Z" tests="2" failures="0" errors="0" time="1.772">
+    <testcase name="API health returns 200" time="1.772" classname="ApiHealth"/>
+    <testcase name="API status is ok" time="1.772" classname="ApiHealth"/>
+  </testsuite>
+  <testsuite name="AI Service Health" id="f0d20b20-592a-425b-a04c-fbb40a87dd60" timestamp="2026-06-10T01:57:35.777Z" tests="2" failures="0" errors="0" time="1.284">
+    <testcase name="AI service health returns 200" time="1.284" classname="AiServiceHealth"/>
+    <testcase name="AI service status is ok" time="1.284" classname="AiServiceHealth"/>
+  </testsuite>
+</testsuites>
